@@ -5,3 +5,5 @@ This project features a basic idea of Infix, Prefix and Postfix Expressions and 
 This project will be helpful to beginners who are starting with Stack Data Structure as a coding topic.
 
 This project gives a basic insight about the working of Stack works and explores one of its applications. It also helps developers to create an application using data structures as a base.
+
+To get the working application check out the Project section where you can find the CodePen link for this project.
