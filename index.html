@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="contain-total">
+            <table align="center">
+        <tr>
+          <th>PREFIX</th>
+          <th>INFIX</th>
+          <th>POSTFIX</th>
+        </tr>
+        <tr>
+          <td>+AB</td>
+          <td>A+B</td>
+          <td>AB+</td>
+        </tr>
+        <tr>
+          <td>+A*BC</td>
+          <td>A+B*C</td>
+          <td>ABC*+</td>
+        </tr>
+        <tr>
+          <td>*+ABC</td>
+          <td>(A+B)*C</td>
+          <td>AB+C*</td>
+        </tr>
+        <tr>
+          <td>+A*-BCD</td>
+          <td>A+B*C-D</td>
+          <td>ABC*+D-</td>
+        </tr>
+      </table>
+      <div class="contain">
+        <h1 style="color:white;">Conversion</h1>
+      <div class="con">
+        <form class="form" action="index.html" method="post">
+        <label for="conversion" style="color:white;">From :</label>
+        <select id="myselct-from" onchange="myfunc()">
+        <option value="infix" class="sel">Infix</option>
+        <option value="postfix" class="sel">Postfix</option>
+        <option value="prefix" class="sel">Prefix</option>
+      </select>
+      <br>
+      <input type="text" id="inp1" style="margin-top:15px;" placeholder="Enter The Expression">
+    </div>
+      <div class="con">
+        <label for="conversion">To :</label>
+        <select id="myselct-to" onchange="myfunc()">
+        <option value="infix" class="sel">Infix</option>
+        <option value="postfix" class="sel">Postfix</option>
+        <option value="prefix" class="sel">Prefix</option>
+      </select><br>
+      <button type="button" name="button" style="margin-top:15px;" onclick="myclick()">Convert</button>
+    </div>
+    <div id="answer">
+    </div>
+    </form>
+      </div>
+      <div class="eval">
+        <h1 style="color:white;">Evaluation</h1>
+        <p style="color:white;">Enter numeric value for eg. 123*+</p>
+        <div class="con">
+        <label for="conversion" style="color:white;">From :</label>
+        <select id="myeval" onchange="evaloption()">
+        <option value="postfix" class="sel">Postfix</option>
+        <option value="prefix" class="sel">Prefix</option>
+      </select>
+      <br>
+      <input type="text" id="inp2" style="margin-top:15px;" placeholder="Enter The Expression">
+      <button type="button" name="button" style="margin-left:15px;" onclick="myeval()">Evaluate</button>
+
+    </div>
+    <div id="ans">
+    </div>
+    </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
